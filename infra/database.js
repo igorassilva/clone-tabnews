@@ -30,13 +30,13 @@ async function getNewClient() {
 
 export default {
   query,
-  getNewClient
+  getNewClient,
 };
 
 function getSSLValues() {
   if (process.env.POSTGRES_CA) {
     return {
-      ca: process.env.POSTGRES_CA
+      ca: process.env.POSTGRES_CA,
     };
   }
 
